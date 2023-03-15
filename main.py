@@ -7,7 +7,6 @@
 
 import os
 import shutil
-from progressbar import *
 from openpyxl import Workbook
 from openpyxl import load_workbook
 
@@ -87,8 +86,7 @@ if __name__ == '__main__':
 
     # 终于可以开始批量移动文件
     print(movednumber, " files is going to be moved")
-    # progress = ProgressBar()
-    # for idx in progress(range(1000)):
+
     for i in range(0, movednumber):
         print(f"moving the file from {movedfilesrc[i]}, {movedfiledst[i]}")
         shutil.move(movedfilesrc[i], movedfiledst[i])
