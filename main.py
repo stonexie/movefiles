@@ -24,7 +24,7 @@ if __name__ == '__main__':
     movedfiledst = []
     movednumber = 0
 
-    #接受用户输入
+    #接受用户输入，选择是移动照片还是视频
     print('this is going to move the video or pictures file to the desired place')
     userinput = input('please input your first src and then dst path in strings, if you input the enter directly, '
                       'will use the default directors:')
